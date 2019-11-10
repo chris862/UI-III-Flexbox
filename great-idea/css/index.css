@@ -54,8 +54,6 @@ table {
 
 html, body {
     height: 100%;
-		width: 90%;
-		margin: auto;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -67,17 +65,23 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+body {
+	width: 60%;
+	margin: auto;
+}
+
 header {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	margin: 3% 0% 3% 0%;
+	width: 100%;
 }
 
 nav {
 	flex: 5;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-right: 10%;
 }
 
 nav a {
@@ -92,7 +96,7 @@ nav a {
 .hero {
 	margin: 5% 0% 5% 0%;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 
@@ -105,6 +109,12 @@ nav a {
 	align-items: center;
 	text-align: center;
 	margin: 5% 10% 5% 5%;
+	flex: 1;
+	align-self: center;
+}
+
+.hero img {
+	flex: 1;
 }
 
 
@@ -118,6 +128,10 @@ nav a {
 
 #about {
 	margin: 3% 0% 3% 1.5%;
+}
+
+.middle-img {
+	width: 100%;
 }
 
 .row-2 {

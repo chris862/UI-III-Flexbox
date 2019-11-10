@@ -64,3 +64,135 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 60%;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3% 0% 3% 0%;
+	width: 100%;
+}
+
+nav {
+	flex: 3;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10%;
+}
+
+nav a {
+	text-decoration: none;
+	color: gray;
+}
+
+.logo {
+	flex: 1;
+}
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.top-content img {
+	width: 100%;
+}
+
+#services {
+	margin: 4% 0% 4% 0%;
+}
+
+.middle-content section {
+	border: 1px solid black;
+	background: #E9E7E8;
+	padding: 2%;
+}
+
+button {
+	background: #F4F3F3;
+	border-radius: 5%;
+}
+
+
+.row1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+#digital-design {
+	margin: 6% 3% 3% 0%;
+
+}
+
+#ux-ui {
+	margin: 6% 0% 3% 3%;
+
+}
+
+.row2 {
+	display: flex;
+}
+
+#digital-marketing {
+	margin: 3% 3% 3% 0%;
+}
+
+#web-development {
+	margin: 3% 0% 3% 3%;
+}
+
+.row3 {
+	display: flex;
+}
+
+#ios-development {
+	margin: 3% 3% 6% 0%;
+}
+
+#android-development{
+	margin: 3% 0% 6% 3%;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+#service-info {
+	flex: 1;
+	margin: 6% 3% 6% 0%;
+}
+
+#service-info ul {
+	list-style-type: square;
+	margin-left: 3.5%;
+}
+
+#service-info ul li{
+	margin: 3% 0% 3% 0%;
+}
+
+.services-info-img {
+	flex: 1;
+	margin: 6% 0% 6% 3%;
+}
+
+section button {
+	margin-top: 3.5%;
+	border: 1px solid black;
+	padding: 2%;
+	border-radius: 10%;
+	width: 30%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
