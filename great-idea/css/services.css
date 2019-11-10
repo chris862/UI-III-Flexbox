@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 60%;
+	max-width: 900px;
 	margin: auto;
 }
 
@@ -88,10 +88,13 @@ nav {
 nav a {
 	text-decoration: none;
 	color: gray;
+	margin-right: 5%;
 }
 
 .logo {
 	flex: 1;
+	width: 60%;
+	margin-left: 5%;
 }
 
 .top-content {
@@ -195,4 +198,94 @@ footer {
 	text-align: center;
 	margin-top: 2%;
 	margin-bottom: 8%;
+}
+
+@media (max-width: 600px) {
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 30vh;
+	}
+
+	nav {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	nav a {
+		padding: 1rem;
+	}
+
+	.logo {
+		width: 50vw;
+		align-self: center;
+		margin-top: 1rem;
+	}
+
+	.top-content {
+		height: 50vh;
+	}
+
+	.top-content img {
+		height: 35%;
+	}
+
+	#services {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.row1 {
+		flex-direction: column;
+	}
+
+	#ios-development {
+		margin: 3%;
+	}
+
+	#android-development{
+		margin: 3%;
+	}
+
+	#digital-marketing {
+		margin: 3%;
+	}
+
+	#web-development {
+		margin: 3%;
+	}
+
+	#digital-design {
+		margin: 3%;
+
+	}
+
+	#ux-ui {
+		margin: 3%;
+
+	}
+	.row2 {
+		flex-direction: column;
+	}
+
+	.row3 {
+		flex-direction: column;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	#service-info {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.services-info-img {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }

@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 60%;
+	max-width: 900px;
 	margin: auto;
 }
 
@@ -78,7 +78,7 @@ header {
 }
 
 nav {
-	flex: 5;
+	flex: 1;
 	display: flex;
 	justify-content: space-between;
 	margin-right: 10%;
@@ -87,10 +87,14 @@ nav {
 nav a {
 	text-decoration: none;
 	color: gray;
+	margin-right: 5%;
 }
 
 .logo {
 	flex: 1;
+	margin: 0;
+	width: 70%;
+	margin-left: 5%;
 }
 
 .hero {
@@ -102,7 +106,7 @@ nav a {
 
 
 .hero section h1 {
-	font-size: 5em;
+	font-size: 250%;
 }
 
 .hero section  {
@@ -157,4 +161,8 @@ nav a {
 footer {
 	text-align: center;
 	margin: 5%;
+}
+
+@media (max-width: 450px) {
+	
 }
