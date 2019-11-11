@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	max-width: 900px;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3% 0% 3% 0%;
+	width: 100%;
+}
+
+nav {
+	flex: 3;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10%;
+}
+
+nav a {
+	text-decoration: none;
+	color: gray;
+	margin-right: 5%;
+}
+
+.logo {
+	flex: 1;
+	width: 60%;
+	margin-left: 5%;
+}
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.top-content img {
+	width: 100%;
+}
+
+#services {
+	margin: 4% 0% 4% 0%;
+}
+
+.middle-content section {
+	border: 1px solid black;
+	background: #E9E7E8;
+	padding: 2%;
+}
+
+button {
+	background: #F4F3F3;
+	border-radius: 5%;
+}
+
+
+.row1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+#digital-design {
+	margin: 6% 3% 3% 0%;
+
+}
+
+#ux-ui {
+	margin: 6% 0% 3% 3%;
+
+}
+
+.row2 {
+	display: flex;
+}
+
+#digital-marketing {
+	margin: 3% 3% 3% 0%;
+}
+
+#web-development {
+	margin: 3% 0% 3% 3%;
+}
+
+.row3 {
+	display: flex;
+}
+
+#ios-development {
+	margin: 3% 3% 6% 0%;
+}
+
+#android-development{
+	margin: 3% 0% 6% 3%;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+#service-info {
+	flex: 1;
+	margin: 6% 3% 6% 0%;
+}
+
+#service-info ul {
+	list-style-type: square;
+	margin-left: 3.5%;
+}
+
+#service-info ul li{
+	margin: 3% 0% 3% 0%;
+}
+
+.services-info-img {
+	flex: 1;
+	margin: 6% 0% 6% 3%;
+}
+
+section button {
+	margin-top: 3.5%;
+	border: 1px solid black;
+	padding: 2%;
+	border-radius: 10%;
+	width: 30%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 8%;
+}
+
+@media (max-width: 600px) {
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 30vh;
+	}
+
+	nav {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	nav a {
+		padding: 1rem;
+	}
+
+	.logo {
+		width: 50vw;
+		align-self: center;
+		margin-top: 1rem;
+	}
+
+	.top-content {
+		height: 50vh;
+	}
+
+	.top-content img {
+		height: 35%;
+	}
+
+	#services {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.row1 {
+		flex-direction: column;
+	}
+
+	#ios-development {
+		margin: 3%;
+	}
+
+	#android-development{
+		margin: 3%;
+	}
+
+	#digital-marketing {
+		margin: 3%;
+	}
+
+	#web-development {
+		margin: 3%;
+	}
+
+	#digital-design {
+		margin: 3%;
+
+	}
+
+	#ux-ui {
+		margin: 3%;
+
+	}
+	.row2 {
+		flex-direction: column;
+	}
+
+	.row3 {
+		flex-direction: column;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	#service-info {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.services-info-img {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
